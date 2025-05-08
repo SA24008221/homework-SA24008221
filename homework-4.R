@@ -28,7 +28,7 @@ mutate(oxygen_category = ifelse(oxygen > 90, "high", "low")) |> # 新增oxygen_c
 group_by(oxygen_category) |>   # 分组计算
 summarise(
   mean_alt = mean(alt),
-  mean_ph = mean(pH)
+  mean_pH = mean(pH)
 )
 print(result)  # 查看结果
     
